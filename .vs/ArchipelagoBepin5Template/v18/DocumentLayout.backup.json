@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\receresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\receresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\archipelago\\archipelagoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:archipelago\\archipelagoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\scenepatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\scenepatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\scrollbypointerpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\scrollbypointerpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\townuipatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\townuipatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\tournamentresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\tournamentresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScenePatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScenePatches.cs",
+              "RelativeDocumentMoniker": "Patches\\ScenePatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScenePatches.cs",
+              "RelativeToolTip": "Patches\\ScenePatches.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T07:47:38.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScrollByPointerPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScrollByPointerPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\ScrollByPointerPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScrollByPointerPatches.cs",
+              "RelativeToolTip": "Patches\\ScrollByPointerPatches.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwDAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T06:59:35.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReceResultPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ReceResultPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\ReceResultPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ReceResultPatches.cs",
+              "RelativeToolTip": "Patches\\ReceResultPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T03:23:37.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Plugin.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Plugin.cs",
+              "RelativeDocumentMoniker": "Plugin.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Plugin.cs",
+              "RelativeToolTip": "Plugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T03:22:20.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TournamentResultPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TournamentResultPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\TournamentResultPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TournamentResultPatches.cs",
+              "RelativeToolTip": "Patches\\TournamentResultPatches.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowFEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T03:05:10.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TownUIPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TownUIPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\TownUIPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TownUIPatches.cs",
+              "RelativeToolTip": "Patches\\TownUIPatches.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T02:57:44.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArchipelagoClient.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\ArchipelagoClient.cs",
+              "RelativeDocumentMoniker": "Archipelago\\ArchipelagoClient.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\ArchipelagoClient.cs",
+              "RelativeToolTip": "Archipelago\\ArchipelagoClient.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAQwA0BAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T02:50:01.004Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

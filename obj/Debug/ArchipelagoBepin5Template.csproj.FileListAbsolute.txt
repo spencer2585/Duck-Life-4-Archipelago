@@ -1,0 +1,14 @@
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\DuckLife4Archipelago\obj\Debug\ArchipelagoBepin5Template.csproj.AssemblyReference.cache
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\DuckLife4Archipelago\obj\Debug\ArchipelagoBepin5Template.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\DuckLife4Archipelago\obj\Debug\ArchipelagoBepin5Template.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\Duck Life 4\BepInEx\plugins\DuckLife4Archipelago\DuckLife4Archipelago.deps.json
+D:\SteamLibrary\steamapps\common\Duck Life 4\BepInEx\plugins\DuckLife4Archipelago\DuckLife4Archipelago.dll
+D:\SteamLibrary\steamapps\common\Duck Life 4\BepInEx\plugins\DuckLife4Archipelago\DuckLife4Archipelago.pdb
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\DuckLife4Archipelago\obj\Debug\DuckLife4Archipelago.dll
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\DuckLife4Archipelago\obj\Debug\DuckLife4Archipelago.pdb
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\Duck-Life-4-Archipelago\obj\Debug\ArchipelagoBepin5Template.csproj.AssemblyReference.cache
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\Duck-Life-4-Archipelago\obj\Debug\ArchipelagoBepin5Template.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\Duck-Life-4-Archipelago\obj\Debug\ArchipelagoBepin5Template.csproj.CoreCompileInputs.cache
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\Duck-Life-4-Archipelago\obj\Debug\ArchipelagoBepin5Template.sourcelink.json
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\Duck-Life-4-Archipelago\obj\Debug\DuckLife4Archipelago.dll
+C:\Users\Owner\PycharmProjects\APProjects\DuckLife4Mod\Duck-Life-4-Archipelago\obj\Debug\DuckLife4Archipelago.pdb
