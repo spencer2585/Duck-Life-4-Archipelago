@@ -8,38 +8,40 @@ namespace DuckLife4Archipelago.Patches
     [HarmonyPatch(typeof(AccessData))]
     public class AccessDataPatches
     {
-        // Prefix - intercept XP gains and store separately
         [HarmonyPatch(nameof(AccessData.AddXp))]
         [HarmonyPrefix]
         public static bool AddXp_Prefix(string typeexp, float exp)
         {
             // Only intercept if we're connected
             if (!ArchipelagoClient.Authenticated || Plugin.SkillManager == null)
-                return true;  // Let original method run normally
-
+                return true;
+            
             // Convert skill name
             string skill = ConvertSkillType(typeexp);
             if (string.IsNullOrEmpty(skill))
                 return true;
-
-            Plugin.BepinLogger.LogInfo($"Intercepted training XP: {exp} for {skill}");
-
+            
+            // Apply ExpModifier from slot data
+            float modifiedExp = exp * ArchipelagoClient.ServerData.ExpModifier;
+            
+            Plugin.BepinLogger.LogInfo($"Intercepted training XP: {exp} for {skill}, modified to {modifiedExp} (modifier: {ArchipelagoClient.ServerData.ExpModifier})");
+            
+            // SET lastAddExp so endscreen knows which skill was trained
             AccessData.lastAddExp = typeexp;
-
-            // Add to our separate training XP tracker (not AccessData)
-            Plugin.SkillManager.AddTrainingXP(skill, exp);
-
+            
+            // Add to our separate training XP tracker with modified value
+            Plugin.SkillManager.AddTrainingXP(skill, modifiedExp);
+            
             // Check if we hit any milestones and send location checks
             List<int> missedMilestones = Plugin.SkillManager.GetMissedMilestones(skill);
             foreach (int level in missedMilestones)
             {
                 Plugin.BepinLogger.LogInfo($"Sending training check for {skill} at level {level}");
                 SendLocationCheckForLevel(skill, level);
-                Plugin.SkillManager.LastSentMilestone[skill] = level;  // CHANGED: Mark this milestone as sent
+                Plugin.SkillManager.LastSentMilestone[skill] = level;
             }
-
+            
             // Return false to prevent original AddXp from running
-            // This keeps AccessData levels at AP-granted levels only
             return false;
         }
 

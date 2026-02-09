@@ -52,5 +52,37 @@ namespace DuckLife4Archipelago.Patches
 
             return true; // Run original for everything else
         }
+
+        [HarmonyPatch("OnMouseDown")]
+        [HarmonyPrefix]
+        public static void OnMouseDown_Prefix()
+        {
+            // When clicking anywhere, hide blocking popups
+            
+            // Hide "No Ticket" popup if showing
+            GameObject noTicket = GameObject.Find("No Ticket");
+            if (noTicket != null)
+            {
+                var rectTransform = noTicket.GetComponent<RectTransform>();
+                if (rectTransform != null && rectTransform.anchoredPosition == Vector2.zero)
+                {
+                    // Move it off screen
+                    rectTransform.anchoredPosition = new Vector2(0f, 10000f);
+                    Plugin.BepinLogger.LogInfo("Hidden No Ticket popup");
+                }
+            }
+            
+            // Hide keybg popup if showing
+            GameObject keybg = GameObject.Find("keybg");
+            if (keybg != null)
+            {
+                var rectTransform = keybg.GetComponent<RectTransform>();
+                if (rectTransform != null && rectTransform.anchoredPosition == Vector2.zero)
+                {
+                    rectTransform.anchoredPosition = new Vector2(0f, 10000f);
+                    Plugin.BepinLogger.LogInfo("Hidden keybg popup");
+                }
+            }
+        }
     }
 }
