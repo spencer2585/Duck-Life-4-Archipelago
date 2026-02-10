@@ -145,24 +145,34 @@ public class ArchipelagoClient
     /// </summary>
     public void Disconnect()
     {
+        if (session == null)
+            return;
+
         Plugin.BepinLogger.LogDebug("disconnecting from server...");
 
         try
         {
-            if (session?.Socket != null)
+            // Set authenticated to false first to stop any ongoing operations
+            Authenticated = false;
+
+            if (session?.Socket != null && session.Socket.Connected)
             {
-                // Synchronously disconnect and wait a bit
-                session.Socket.DisconnectAsync();
-                System.Threading.Thread.Sleep(100); // Give it time to send goodbye
+                // Send disconnect synchronously
+                session.Socket.DisconnectAsync().Wait(500); // Wait max 500ms
             }
+        }
+        catch (System.AggregateException)
+        {
+            // Expected during shutdown, socket already closed
         }
         catch (System.Exception e)
         {
-            Plugin.BepinLogger.LogWarning($"Exception during disconnect (expected): {e.Message}");
+            Plugin.BepinLogger.LogDebug($"Disconnect exception (expected): {e.Message}");
         }
-
-        session = null;
-        Authenticated = false;
+        finally
+        {
+            session = null;
+        }
     }
 
     public void SendMessage(string message)
@@ -246,6 +256,7 @@ public class ArchipelagoClient
             }
         }
         // Handle keys
+        // Handle keys
         else if (itemName.EndsWith(" Key"))
         {
             string keyColor = itemName.Replace(" Key", "").ToLower();
@@ -259,10 +270,23 @@ public class ArchipelagoClient
                 PlayerPrefs.SetString(keyPref, "ok");
                 PlayerPrefs.Save();
 
-                // Verify it was set
-                bool hasKey = PlayerPrefs.HasKey(keyPref);
-                string keyValue = PlayerPrefs.GetString(keyPref, "NOT SET");
-                Plugin.BepinLogger.LogInfo($"Collected {keyColor} key ({keyPref}) - HasKey: {hasKey}, Value: {keyValue}");
+                Plugin.BepinLogger.LogInfo($"Collected {keyColor} key ({keyPref})");
+
+                // Check if player now has all 3 keys
+                if (PlayerPrefs.HasKey("key1") && PlayerPrefs.HasKey("key2") && PlayerPrefs.HasKey("key3"))
+                {
+                    Plugin.BepinLogger.LogInfo("All 3 keys collected! Unlocking Fire Duck access");
+                    PlayerPrefs.SetString("t6boxopened", "ok");
+                    PlayerPrefs.SetString("t6removebg41", "ok");
+                    PlayerPrefs.Save();
+
+                    // If currently in town6, reload to show changes
+                    if (Application.loadedLevelName == "town6")
+                    {
+                        Plugin.BepinLogger.LogInfo("In Volcano - reloading to show Fire Duck");
+                        ScrollByPointer.LoadLevel("town6");
+                    }
+                }
             }
         }
         else if (itemName== "Victory")

@@ -42,6 +42,15 @@ public class Plugin : BaseUnityPlugin
         ArchipelagoConsole.Awake();
 
         ArchipelagoConsole.LogMessage($"{ModDisplayInfo} loaded!");
+        Application.quitting += OnQuit;
+    }
+    private void OnQuit()
+    {
+        BepinLogger.LogInfo("Application quitting - cleaning up");
+        if (ArchipelagoClient != null)
+        {
+            ArchipelagoClient.Disconnect();
+        }
     }
     private void OnDestroy()
     {
