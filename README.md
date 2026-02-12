@@ -1,4 +1,7 @@
 # Duck Life 4 Archipelago Randomizer
+Get the latest version of the randomizer [here](https://github.com/spencer2585/Duck-Life-4-Archipelago/releases/latest)
+This requires the Archipelago software to generate a randomizer, find the latest version of Archipelago [here](https://github.com/ArchipelagoMW/Archipelago)
+
 ## What's Randomized
 - Skill Levels
 - Races
@@ -13,6 +16,6 @@
 > [!Important]
 > If you are playing on a non-Windows system, you may need to put "WINEDLLOVERRIDES="winhttp=n,b" %command%" without the quotes in your launch properties
 
-### For generating
+### For Generating
 1. Download DuckLife4.apworld
 2. Install the APWorld or move it to the custom worlds folder in your archipelago install
