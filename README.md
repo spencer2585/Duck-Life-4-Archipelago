@@ -1,6 +1,6 @@
 # Duck Life 4 Archipelago Randomizer
 Get the latest version of the randomizer [here](https://github.com/spencer2585/Duck-Life-4-Archipelago/releases/latest)  
-This requires the Archipelago software to generate a randomizer, find the latest version of Archipelago [here](https://github.com/ArchipelagoMW/Archipelago)
+This requires the Archipelago software to generate a randomizer, find the latest version of Archipelago [here](https://github.com/ArchipelagoMW/Archipelago)  
 This randomizer is designed to support the remake of Duck Life 4 **Not the classic version**. you can find the link to the steam page [here](https://store.steampowered.com/app/1461200/Duck_Life_4/)  
 ## What's Randomized
 - Skill Levels
