@@ -28,7 +28,7 @@ public class ArchipelagoData
 
     public ArchipelagoData()
     {
-        Uri = "Archipelago.gg:34187";
+        Uri = "Archipelago.gg:38281";
         SlotName = "Player1";
         CheckedLocations = new();
     }
@@ -61,9 +61,9 @@ public class ArchipelagoData
         }
 
         // Get ExpModifier from slot data
-        if (slotData.ContainsKey("ExpModifier"))
+        if (slotData.ContainsKey("XpModifier"))
         {
-            ExpModifier = Convert.ToSingle(slotData["ExpModifier"]);
+            ExpModifier = Convert.ToSingle(slotData["XpModifier"]);
         }
         else
         {
