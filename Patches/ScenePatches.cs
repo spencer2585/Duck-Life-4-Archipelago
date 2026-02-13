@@ -1,5 +1,6 @@
 ﻿using DuckLife4Archipelago.Archipelago;
 using HarmonyLib;
+using UnityEngine;
 
 namespace DuckLife4Archipelago.Patches
 {
@@ -15,6 +16,17 @@ namespace DuckLife4Archipelago.Patches
                 return;
 
             Plugin.BepinLogger.LogInfo($"Loading scene: {sceneName}");
+
+            if (sceneName == "TutorialRace")
+            {
+                Plugin.BepinLogger.LogInfo("Skipping tutorial race, going to town1");
+                sceneName = "town1";
+
+                // Set tutorial complete flag
+                PlayerPrefs.SetString("tutorialOK", "OK");
+                PlayerPrefs.Save();
+                return;
+            }
 
             if (sceneName == "cutscene_ending")
             {
