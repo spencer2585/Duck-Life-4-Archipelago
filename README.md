@@ -11,7 +11,7 @@ This randomizer is designed to support the remake of Duck Life 4 **Not the class
 ## Setup
 ### For the Game
 1. Download DL4mod.zip from the latest release
-2. Extract the zip into your games install directory so that there is a folder named BepInEx and winhttp.dll in the same folder as Duck Life 4.exe(The install directory can be found by clicking the gear on the games page, manage, Browse local files on Steam)
+2. Extract the zip into your games install directory so that there is a folder named BepInEx and 2 files named winhttp.dll and doorstop_config.ini in the same folder as Duck Life 4.exe(The install directory can be found by clicking the gear on the games page, manage, Browse local files on Steam)
 3. Start the game. If a menu appears in the corner where you can enter your connection info, then you did everything correctly. If you are playing on a non-Windows system, you may need to put `WINEDLLOVERRIDES="winhttp=n,b" %command%` in your launch properties
 > [!Warning]
 > When starting a new randomizer, make sure to start a new game before connecting. Systems are in place to try to prevent any issues if you forget but they are not consistent enough to be relied upon
