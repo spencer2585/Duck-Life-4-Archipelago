@@ -1,0 +1,330 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\shopmanagementpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\shopmanagementpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\tutorialraceskippatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\tutorialraceskippatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\scenepatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\scenepatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\mainmenupatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\mainmenupatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\receresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\receresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\archipelago\\archipelagodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:archipelago\\archipelagodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\utils\\archipelagoconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:utils\\archipelagoconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\archipelago\\archipelagoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:archipelago\\archipelagoclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\townuipatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\townuipatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\tournamentresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\tournamentresultpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\scrollbypointerpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\scrollbypointerpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\adblockbuttonpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\adblockbuttonpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\selecttrainpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\selecttrainpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\accessdatapatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\accessdatapatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\duckmanagementpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\duckmanagementpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\patches\\minigameendscenepatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:patches\\minigameendscenepatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:skillmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|c:\\users\\owner\\pycharmprojects\\approjects\\ducklife4mod\\duck-life-4-archipelago\\archipelago\\deathlinkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}|ArchipelagoBepin5Template.csproj|solutionrelative:archipelago\\deathlinkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShopManagementPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ShopManagementPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\ShopManagementPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ShopManagementPatches.cs",
+              "RelativeToolTip": "Patches\\ShopManagementPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T19:38:09.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TutorialRaceSkipPatch.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TutorialRaceSkipPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\TutorialRaceSkipPatch.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TutorialRaceSkipPatch.cs",
+              "RelativeToolTip": "Patches\\TutorialRaceSkipPatch.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T19:18:00.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainMenuPatch.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\MainMenuPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\MainMenuPatch.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\MainMenuPatch.cs",
+              "RelativeToolTip": "Patches\\MainMenuPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T19:09:14.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArchipelagoConsole.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Utils\\ArchipelagoConsole.cs",
+              "RelativeDocumentMoniker": "Utils\\ArchipelagoConsole.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Utils\\ArchipelagoConsole.cs",
+              "RelativeToolTip": "Utils\\ArchipelagoConsole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T03:47:05.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DeathLinkHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\DeathLinkHandler.cs",
+              "RelativeDocumentMoniker": "Archipelago\\DeathLinkHandler.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\DeathLinkHandler.cs",
+              "RelativeToolTip": "Archipelago\\DeathLinkHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T03:46:55.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SkillManager.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\SkillManager.cs",
+              "RelativeDocumentMoniker": "SkillManager.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\SkillManager.cs",
+              "RelativeToolTip": "SkillManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T03:46:38.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReceResultPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ReceResultPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\ReceResultPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ReceResultPatches.cs",
+              "RelativeToolTip": "Patches\\ReceResultPatches.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAjwCgAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T03:46:02.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MinigameEndscenePatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\MinigameEndscenePatches.cs",
+              "RelativeDocumentMoniker": "Patches\\MinigameEndscenePatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\MinigameEndscenePatches.cs",
+              "RelativeToolTip": "Patches\\MinigameEndscenePatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T03:45:23.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DuckManagementPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\DuckManagementPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\DuckManagementPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\DuckManagementPatches.cs",
+              "RelativeToolTip": "Patches\\DuckManagementPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T03:45:17.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArchipelagoData.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\ArchipelagoData.cs",
+              "RelativeDocumentMoniker": "Archipelago\\ArchipelagoData.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\ArchipelagoData.cs",
+              "RelativeToolTip": "Archipelago\\ArchipelagoData.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T03:39:08.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccessDataPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\AccessDataPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\AccessDataPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\AccessDataPatches.cs",
+              "RelativeToolTip": "Patches\\AccessDataPatches.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T04:36:30.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SelectTrainPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\SelectTrainPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\SelectTrainPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\SelectTrainPatches.cs",
+              "RelativeToolTip": "Patches\\SelectTrainPatches.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T04:35:48.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdBlockButtonPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\AdBlockButtonPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\AdBlockButtonPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\AdBlockButtonPatches.cs",
+              "RelativeToolTip": "Patches\\AdBlockButtonPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T04:30:54.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScenePatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScenePatches.cs",
+              "RelativeDocumentMoniker": "Patches\\ScenePatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScenePatches.cs",
+              "RelativeToolTip": "Patches\\ScenePatches.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T07:47:38.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScrollByPointerPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScrollByPointerPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\ScrollByPointerPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\ScrollByPointerPatches.cs",
+              "RelativeToolTip": "Patches\\ScrollByPointerPatches.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T06:59:35.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Plugin.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Plugin.cs",
+              "RelativeDocumentMoniker": "Plugin.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Plugin.cs",
+              "RelativeToolTip": "Plugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T03:22:20.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TournamentResultPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TournamentResultPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\TournamentResultPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TournamentResultPatches.cs",
+              "RelativeToolTip": "Patches\\TournamentResultPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T03:05:10.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TownUIPatches.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TownUIPatches.cs",
+              "RelativeDocumentMoniker": "Patches\\TownUIPatches.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Patches\\TownUIPatches.cs",
+              "RelativeToolTip": "Patches\\TownUIPatches.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T02:57:44.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ArchipelagoClient.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\ArchipelagoClient.cs",
+              "RelativeDocumentMoniker": "Archipelago\\ArchipelagoClient.cs",
+              "ToolTip": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\Archipelago\\ArchipelagoClient.cs",
+              "RelativeToolTip": "Archipelago\\ArchipelagoClient.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAiwJkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T02:50:01.004Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
