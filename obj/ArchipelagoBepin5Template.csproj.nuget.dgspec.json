@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj": {}
+    "C:\\Users\\Owner\\RiderProjects\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj": {
+    "C:\\Users\\Owner\\RiderProjects\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\RiderProjects\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj",
         "projectName": "DuckLife4Archipelago",
-        "projectPath": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj",
+        "projectPath": "C:\\Users\\Owner\\RiderProjects\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj",
         "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\obj\\",
+        "outputPath": "C:\\Users\\Owner\\RiderProjects\\Duck-Life-4-Archipelago\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

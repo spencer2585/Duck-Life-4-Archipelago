@@ -111,7 +111,7 @@ public class ArchipelagoClient
                 Plugin.BepinLogger.LogWarning("No ducks found! Using default duck ID");
                 AccessData.currentDuckId = "1";  // Fallback
             }
-            Plugin.SkillManager.LoadAllTrainingXP();
+            Plugin.SkillManager.LoadAllTrainingXp();
             System.Threading.Tasks.Task.Delay(1000).ContinueWith(_ =>
             {
                 Patches.AccessDataPatches.CheckAndSendMissedMilestones();

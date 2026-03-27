@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.3.11505.172 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchipelagoBepin5Template", "ArchipelagoBepin5Template.csproj", "{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckLife4Archipelago", "DuckLife4Archipelago.csproj", "{15C57D2F-FBE4-C69A-DCBA-D1DF326E9670}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

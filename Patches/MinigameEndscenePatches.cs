@@ -35,8 +35,8 @@ namespace DuckLife4Archipelago.Patches
                 return;
             }
             // Get XP values
-            float oldTrainingXP = AccessDataPatches.GetPreTrainingXP(skill);
-            float currentTrainingXP = Plugin.SkillManager.TrainingXP[skill];
+            float oldTrainingXP = AccessDataPatches.GetPreTrainingXp(skill);
+            float currentTrainingXP = Plugin.SkillManager.TrainingXp[skill];
 
             int oldTrainingLevel = Mathf.Min(Mathf.FloorToInt(oldTrainingXP / 10f), 150);
             int currentTrainingLevel = Mathf.Min(Mathf.FloorToInt(currentTrainingXP / 10f), 150);

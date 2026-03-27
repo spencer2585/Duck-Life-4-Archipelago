@@ -49,7 +49,7 @@ namespace DuckLife4Archipelago.Patches
             if (skill != null)
             {
                 Plugin.BepinLogger.LogInfo($"About to train {skill}, saving pre-training XP");
-                AccessDataPatches.SavePreTrainingXP(skill);
+                AccessDataPatches.SavePreTrainingXp(skill);
             }
         }
         // Patch the select method to show training levels

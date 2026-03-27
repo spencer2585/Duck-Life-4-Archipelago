@@ -1,7 +1,6 @@
 ﻿using DuckLife4Archipelago.Archipelago;
 using HarmonyLib;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace DuckLife4Archipelago.Patches
 {
@@ -28,9 +27,16 @@ namespace DuckLife4Archipelago.Patches
             
             // SET lastAddExp so endscreen knows which skill was trained
             AccessData.lastAddExp = typeexp;
+
+            //make sure our gained EXP won't put us over the level cap (Purely cosmetic, our level won't go over 150 anyways but the gainedXp screen will show it without this)
+            float currentXp = GetPreTrainingXp(skill);
+            if (currentXp + modifiedExp > AccessData.LevelToExp(150))
+                modifiedExp = AccessData.LevelToExp(150) - currentXp;
+            if (modifiedExp < 0f)
+                modifiedExp = 0f;
             
             // Add to our separate training XP tracker with modified value
-            Plugin.SkillManager.AddTrainingXP(skill, modifiedExp);
+            Plugin.SkillManager.AddTrainingXp(skill, modifiedExp);
             
             // Check if we hit any milestones and send location checks
             List<int> missedMilestones = Plugin.SkillManager.GetMissedMilestones(skill);
@@ -111,7 +117,7 @@ namespace DuckLife4Archipelago.Patches
             }
         }
         // Track XP at the start of each training session
-        private static Dictionary<string, float> preTrainingXP = new Dictionary<string, float>
+        private static Dictionary<string, float> _preTrainingXp = new Dictionary<string, float>
         {
             { "run", 0f },
             { "swim", 0f },
@@ -121,17 +127,17 @@ namespace DuckLife4Archipelago.Patches
             { "energy", 0f }
         };
 
-        public static float GetPreTrainingXP(string skill)
+        public static float GetPreTrainingXp(string skill)
         {
-            return preTrainingXP.ContainsKey(skill) ? preTrainingXP[skill] : 0f;
+            return _preTrainingXp.ContainsKey(skill) ? _preTrainingXp[skill] : 0f;
         }
 
-        public static void SavePreTrainingXP(string skill)
+        public static void SavePreTrainingXp(string skill)
         {
             if (Plugin.SkillManager != null)
             {
-                preTrainingXP[skill] = Plugin.SkillManager.TrainingXP[skill];
-                Plugin.BepinLogger.LogInfo($"Saved pre-training XP for {skill}: {preTrainingXP[skill]}");
+                _preTrainingXp[skill] = Plugin.SkillManager.TrainingXp[skill];
+                Plugin.BepinLogger.LogInfo($"Saved pre-training XP for {skill}: {_preTrainingXp[skill]}");
             }
             else
             {

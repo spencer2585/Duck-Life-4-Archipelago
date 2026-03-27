@@ -7,7 +7,7 @@ namespace DuckLife4Archipelago
     public class SkillManager
     {
         // Track raw training XP separately
-        public Dictionary<string, float> TrainingXP = new Dictionary<string, float>
+        public Dictionary<string, float> TrainingXp = new Dictionary<string, float>
         {
             { "run", 0f },
             { "swim", 0f },
@@ -39,11 +39,11 @@ namespace DuckLife4Archipelago
             { "energy", 0 }
         };
 
-        private int skillSize;
+        private int _skillSize;
 
         public SkillManager(int skillSize)
         {
-            this.skillSize = skillSize;
+            this._skillSize = skillSize;
         }
 
         // Add AP levels when receiving an item
@@ -72,7 +72,7 @@ namespace DuckLife4Archipelago
             int lastSent = LastSentMilestone[skill];
 
             // Find all milestones between last sent and current
-            for (int level = lastSent + skillSize; level <= currentTrainingLevel; level += skillSize)
+            for (int level = lastSent + _skillSize; level <= currentTrainingLevel; level += _skillSize)
             {
                 missedLevels.Add(level);
             }
@@ -125,37 +125,37 @@ namespace DuckLife4Archipelago
         private const string TRAINING_XP_KEY_PREFIX = "AP_TrainingXP_";
 
         // Modify AddTrainingXP to save after adding
-        public void AddTrainingXP(string skill, float xp)
+        public void AddTrainingXp(string skill, float xp)
         {
-            TrainingXP[skill] += xp;
-            Plugin.BepinLogger.LogInfo($"Added {xp} training XP to {skill}. Total training XP: {TrainingXP[skill]}");
+            TrainingXp[skill] += xp;
+            Plugin.BepinLogger.LogInfo($"Added {xp} training XP to {skill}. Total training XP: {TrainingXp[skill]}");
 
             // Update TrainingLevels based on XP (10 XP per level)
-            TrainingLevels[skill] = Mathf.FloorToInt(TrainingXP[skill] / 10f);
+            TrainingLevels[skill] = Mathf.FloorToInt(TrainingXp[skill] / 10f);
 
             // Save to PlayerPrefs
-            SaveTrainingXP(skill);
+            SaveTrainingXp(skill);
         }
 
         // Save training XP to disk
-        private void SaveTrainingXP(string skill)
+        private void SaveTrainingXp(string skill)
         {
             string key = TRAINING_XP_KEY_PREFIX + AccessData.currentDuckId + "_" + skill;
-            PlayerPrefs.SetFloat(key, TrainingXP[skill]);
+            PlayerPrefs.SetFloat(key, TrainingXp[skill]);
             PlayerPrefs.Save();
         }
 
         // Load training XP from disk (call this when SkillManager is created)
-        public void LoadAllTrainingXP()
+        public void LoadAllTrainingXp()
         {
-            foreach (string skill in TrainingXP.Keys.ToList())
+            foreach (string skill in TrainingXp.Keys.ToList())
             {
                 string key = TRAINING_XP_KEY_PREFIX + AccessData.currentDuckId + "_" + skill;
                 if (PlayerPrefs.HasKey(key))
                 {
-                    TrainingXP[skill] = PlayerPrefs.GetFloat(key);
-                    TrainingLevels[skill] = Mathf.FloorToInt(TrainingXP[skill] / 10f);
-                    Plugin.BepinLogger.LogInfo($"Loaded training XP for {skill}: {TrainingXP[skill]} (level {TrainingLevels[skill]})");
+                    TrainingXp[skill] = PlayerPrefs.GetFloat(key);
+                    TrainingLevels[skill] = Mathf.FloorToInt(TrainingXp[skill] / 10f);
+                    Plugin.BepinLogger.LogInfo($"Loaded training XP for {skill}: {TrainingXp[skill]} (level {TrainingLevels[skill]})");
                 }
             }
         }

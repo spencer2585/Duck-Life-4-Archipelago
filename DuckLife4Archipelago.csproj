@@ -36,6 +36,9 @@
 	    <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
 		<Private>false</Private>
 	</Reference>
+	<Reference Include="UnityEngine.ImageConversionModule">
+	  <HintPath>D:\SteamLibrary\steamapps\common\Duck Life 4\Duck Life 4_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+	</Reference>
 	<Reference Include="UnityEngine.IMGUIModule">
 	    <HintPath>lib\UnityEngine.IMGUIModule.dll</HintPath>
 		<Private>false</Private>

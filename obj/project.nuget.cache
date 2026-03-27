@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8gH0rMdHM/g=",
+  "dgSpecHash": "bCeFErj+8Jo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Owner\\PycharmProjects\\APProjects\\DuckLife4Mod\\Duck-Life-4-Archipelago\\ArchipelagoBepin5Template.csproj",
+  "projectFilePath": "C:\\Users\\Owner\\RiderProjects\\Duck-Life-4-Archipelago\\DuckLife4Archipelago.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Owner\\.nuget\\packages\\archipelago.multiclient.net\\6.7.0\\archipelago.multiclient.net.6.7.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
