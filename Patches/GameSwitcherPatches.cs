@@ -5,7 +5,7 @@ namespace DuckLife4Archipelago.Patches
 {
     // Patch whatever class loads the main menu
     [HarmonyPatch(typeof(GameSwitcher))]
-    public class MainMenuPatch
+    public class GameSwitcherPatches
     {
         [HarmonyPatch("Awake")]
         [HarmonyPrefix]
