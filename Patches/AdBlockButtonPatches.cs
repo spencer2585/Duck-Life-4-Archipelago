@@ -13,7 +13,7 @@ namespace DuckLife4Archipelago.Patches
         {
             // Set AdManager.adBlock to true so the button destroys itself
             AdManager.adBlock = true;
-            Plugin.BepinLogger.LogInfo("Hiding Remove Ads button (Steam version doesn't have ads)");
+            Plugin.BepinLogger.LogInfo("Hiding Remove Ads button");
         }
     }
 }
