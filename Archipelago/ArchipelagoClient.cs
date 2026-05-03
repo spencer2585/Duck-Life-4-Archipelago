@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using UnityEngine;
+using DuckLife4Archipelago.Utils;
 
 namespace DuckLife4Archipelago.Archipelago;
 
@@ -25,6 +26,7 @@ public class ArchipelagoClient
     private DeathLinkHandler DeathLinkHandler;
     private ArchipelagoSession session;
 
+    public static bool PendingSceneTransition = false;
 
 
     /// <summary>
@@ -111,12 +113,16 @@ public class ArchipelagoClient
                 Plugin.BepinLogger.LogWarning("No ducks found! Using default duck ID");
                 AccessData.currentDuckId = "1";  // Fallback
             }
+            SaveManager.LoadSlot(ServerData.Seed, ServerData.SlotName);
             Plugin.SkillManager.LoadAllTrainingXp();
             System.Threading.Tasks.Task.Delay(1000).ContinueWith(_ =>
             {
                 Patches.AccessDataPatches.CheckAndSendMissedMilestones();
             });
             Authenticated = true;
+            
+            // Transition to the game after successful connection
+            ArchipelagoClient.PendingSceneTransition = true;
 
             DeathLinkHandler = new(session.CreateDeathLinkService(), ServerData.SlotName);
             session.Locations.CompleteLocationChecksAsync(ServerData.CheckedLocations.ToArray());
@@ -152,14 +158,16 @@ public class ArchipelagoClient
 
         try
         {
-            // Set authenticated to false first to stop any ongoing operations
             Authenticated = false;
 
             if (session?.Socket != null && session.Socket.Connected)
             {
-                // Send disconnect synchronously
-                session.Socket.DisconnectAsync().Wait(500); // Wait max 500ms
+                session.Socket.DisconnectAsync();  // Remove the .Wait(500)
             }
+        }
+        catch (System.Threading.ThreadAbortException)
+        {
+            // Unity is shutting down and aborting threads, this is expected
         }
         catch (System.AggregateException)
         {

@@ -106,25 +106,30 @@ public class SaveManager
             Plugin.BepinLogger.LogInfo($"SaveManager: No save file found at {filePath}, starting fresh.");
             return;
         }
-        
+
         string json = File.ReadAllText(filePath);
-        var data = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
-
-        if (data == null || !data.ContainsKey("playerPrefs")) return;
-
         var wrapper = JsonConvert.DeserializeObject<SaveFile>(json);
+
+        if (wrapper == null || wrapper.playerPrefs == null)
+        {
+            Plugin.BepinLogger.LogWarning($"SaveManager: Failed to deserialize {filePath}");
+            return;
+        }
 
         foreach (KeyValuePair<string, string> kvp in wrapper.playerPrefs)
         {
+            Plugin.BepinLogger.LogInfo($"Loading: {kvp.Key}: {kvp.Value}");
             if (!KnownKeys.TryGetValue(kvp.Key, out PrefType type)) continue;
 
             switch (type)
             {
                 case PrefType.Int:
-                    if (int.TryParse(kvp.Value, out int intVal)) PlayerPrefs.SetInt(kvp.Key, intVal);
+                    if (int.TryParse(kvp.Value, out int intVal))
+                        PlayerPrefs.SetInt(kvp.Key, intVal);
                     break;
                 case PrefType.Float:
-                    if (float.TryParse(kvp.Value, out float floatVal)) PlayerPrefs.SetFloat(kvp.Key, floatVal);
+                    if (float.TryParse(kvp.Value, out float floatVal))
+                        PlayerPrefs.SetFloat(kvp.Key, floatVal);
                     break;
                 default:
                     PlayerPrefs.SetString(kvp.Key, kvp.Value);

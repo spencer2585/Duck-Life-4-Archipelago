@@ -4,6 +4,7 @@ using DuckLife4Archipelago.Archipelago;
 using DuckLife4Archipelago.Utils;
 using HarmonyLib;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace DuckLife4Archipelago;
@@ -37,11 +38,22 @@ public class Plugin : BaseUnityPlugin
         {
             BepinLogger.LogInfo($"Patched: {method.DeclaringType?.Name}.{method.Name}");
         }
+        
+        MainThreadDispatcher.Instance();
 
         ArchipelagoClient = new ArchipelagoClient();
         ArchipelagoConsole.Awake();
+        ConnectionCache.Load();
 
         ArchipelagoConsole.LogMessage($"{ModDisplayInfo} loaded!");
+        //snapshot vanilla save if one does not exist
+        if (!File.Exists(Path.Combine(Path.GetDirectoryName(typeof(Plugin).Assembly.Location), "Saves",
+                "vanilla.json")))
+        {
+            SaveManager.SaveVanilla();
+            BepinLogger.LogInfo("Vanilla save snapshot created.");
+        }
+        
         Application.quitting += OnQuit;
     }
     private void OnQuit()
@@ -49,6 +61,18 @@ public class Plugin : BaseUnityPlugin
         BepinLogger.LogInfo("Application quitting - cleaning up");
         if (ArchipelagoClient != null)
         {
+            if (ArchipelagoClient.Authenticated)
+            {
+                SaveManager.SaveSlot(
+                    ArchipelagoClient.ServerData.Seed,
+                    ArchipelagoClient.ServerData.SlotName
+                );
+                SaveManager.LoadVanilla();
+            }
+            else
+            {
+                SaveManager.SaveVanilla();
+            }
             ArchipelagoClient.Disconnect();
         }
     }
@@ -57,6 +81,18 @@ public class Plugin : BaseUnityPlugin
         // Disconnect from Archipelago when game closes
         if (ArchipelagoClient != null)
         {
+            if (ArchipelagoClient.Authenticated)
+            {
+                SaveManager.SaveSlot(
+                    ArchipelagoClient.ServerData.Seed,
+                    ArchipelagoClient.ServerData.SlotName
+                );
+                SaveManager.LoadVanilla();
+            }
+            else
+            {
+                SaveManager.SaveVanilla();
+            }
             BepinLogger.LogInfo("Game closing, disconnecting from Archipelago...");
             ArchipelagoClient.Disconnect();
         }
@@ -67,6 +103,18 @@ public class Plugin : BaseUnityPlugin
         // Also handle application quit
         if (ArchipelagoClient != null)
         {
+            if (ArchipelagoClient.Authenticated)
+            {
+                SaveManager.SaveSlot(
+                    ArchipelagoClient.ServerData.Seed,
+                    ArchipelagoClient.ServerData.SlotName
+                );
+                SaveManager.LoadVanilla();
+            }
+            else
+            {
+                SaveManager.SaveVanilla();
+            }
             BepinLogger.LogInfo("Application quitting, disconnecting from Archipelago...");
             ArchipelagoClient.Disconnect();
         }
@@ -86,6 +134,18 @@ public class Plugin : BaseUnityPlugin
 
             statusMessage = " Status: Connected";
             GUI.Label(new Rect(16, 50, 300, 20), APDisplayInfo + statusMessage);
+        }
+    }
+    
+    private void Update()
+    {
+        if (ArchipelagoClient.PendingSceneTransition)
+        {
+            ArchipelagoClient.PendingSceneTransition = false;
+            if (PlayerPrefs.HasKey("town"))
+                Transition.ToScene(PlayerPrefs.GetString("town"));
+            else
+                Transition.ToScene("town1");
         }
     }
 }

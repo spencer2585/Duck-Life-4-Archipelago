@@ -42,7 +42,7 @@ public class MainMenuPatches
         }
         else
         {
-            Plugin.BepinLogger.LogWarning("MainMenuPatch: archipelago.png not found next to DLL.");
+            Plugin.BepinLogger.LogWarning("MainMenuPatch: color-icon.png not found next to DLL.");
         }
         // Clear the cloned onClick and wire up our placeholder
         Button apButton = apButtonObj.GetComponent<Button>();

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using DuckLife4Archipelago.Archipelago;
+using DuckLife4Archipelago.Utils;
 
 namespace DuckLife4Archipelago.UI;
 
@@ -58,6 +59,8 @@ public class ConnectionMenuManager : MonoBehaviour
             ArchipelagoClient.ServerData.Uri = _hostField.text;
             ArchipelagoClient.ServerData.SlotName = _slotField.text;
             ArchipelagoClient.ServerData.Password = _passwordField.text;
+            
+            ConnectionCache.Save(_hostField.text, _slotField.text, _passwordField.text);
 
             if (!string.IsNullOrWhiteSpace(_slotField.text))
                 Plugin.ArchipelagoClient.Connect();
