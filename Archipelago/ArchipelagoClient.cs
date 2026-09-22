@@ -101,6 +101,7 @@ public class ArchipelagoClient
 
             ServerData.SetupSession(success.SlotData, session.RoomState.Seed);
             Plugin.SkillManager = new SkillManager(ServerData.SkillSize);
+            SaveManager.LoadSlot(ServerData.Seed, ServerData.SlotName);
             DuckCreator.loadData();  // Make sure duck data is loaded
             if (DuckCreator.duckGroupData.Count > 0)
             {
@@ -113,7 +114,6 @@ public class ArchipelagoClient
                 Plugin.BepinLogger.LogWarning("No ducks found! Using default duck ID");
                 AccessData.currentDuckId = "1";  // Fallback
             }
-            SaveManager.LoadSlot(ServerData.Seed, ServerData.SlotName);
             Plugin.SkillManager.LoadAllTrainingXp();
             System.Threading.Tasks.Task.Delay(1000).ContinueWith(_ =>
             {

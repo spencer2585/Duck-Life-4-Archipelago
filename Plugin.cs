@@ -145,7 +145,15 @@ public class Plugin : BaseUnityPlugin
             if (PlayerPrefs.HasKey("town"))
                 Transition.ToScene(PlayerPrefs.GetString("town"));
             else
-                Transition.ToScene("town1");
+            {
+                CoinSystem.coinInPocket = 150;
+                CoinSystem.deposit2();
+                DuckCreation.backScene = "town1";
+                DuckCreation.firstCreate = true;
+                DuckCreation.colorToDuck = new Color((float) byte.MaxValue, (float) byte.MaxValue, (float) byte.MaxValue, (float) byte.MaxValue);
+                DuckManagement.selectSaveIndex = "0";
+                Transition.ToScene("UI Duck Creation");
+            }
         }
     }
 }

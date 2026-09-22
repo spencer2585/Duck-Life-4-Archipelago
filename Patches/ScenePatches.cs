@@ -12,6 +12,8 @@ namespace DuckLife4Archipelago.Patches
         [HarmonyPrefix]
         public static void ToScene_Prefix(string sceneName)
         {
+            if (string.IsNullOrEmpty(sceneName))
+                return;
             if (!ArchipelagoClient.Authenticated || Plugin.SkillManager == null)
                 return;
 
@@ -23,8 +25,8 @@ namespace DuckLife4Archipelago.Patches
                 sceneName = "town1";
 
                 // Set tutorial complete flag
-                PlayerPrefs.SetString("tutorialOK", "OK");
-                PlayerPrefs.Save();
+                //PlayerPrefs.SetString("tutorialOK", "OK");
+                //PlayerPrefs.Save();
                 return;
             }
 

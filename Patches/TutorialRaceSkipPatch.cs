@@ -15,11 +15,11 @@ namespace DuckLife4Archipelago.Patches
             Plugin.BepinLogger.LogInfo("Tutorial race started, scheduling skip");
 
             // Set tutorial complete
-            PlayerPrefs.SetString("tutorialOK", "OK");
-            PlayerPrefs.Save();
+            //PlayerPrefs.SetString("tutorialOK", "OK");
+            //PlayerPrefs.Save();
 
             // Start coroutine to transition after a brief delay
-            __instance.StartCoroutine(SkipToTown());
+            //__instance.StartCoroutine(SkipToTown());
         }
 
         private static IEnumerator SkipToTown()

@@ -18,24 +18,6 @@ public class SaveManager
         // Duck data
         { "duckGroupData", PrefType.String },
         { "last_duck_id", PrefType.Int },
-        { "duckData1_id", PrefType.String },
-        { "duckData1_name", PrefType.String },
-        { "duckData1_hair", PrefType.Int },
-        { "duckData1_eye", PrefType.Int },
-        { "duckData1_eyec", PrefType.String },
-        { "duckData1_texture", PrefType.Int },
-        { "duckData1_texturec", PrefType.String },
-        { "duckData1_hat", PrefType.Int },
-        { "duckData1_cost", PrefType.Int },
-        // Skill XP
-        { "1.run_exp", PrefType.Float },
-        { "1.climb_exp", PrefType.Float },
-        { "1.fly_exp", PrefType.Float },
-        { "1.int_exp", PrefType.Float },
-        { "1.jump_exp", PrefType.Float },
-        { "1.swim_exp", PrefType.Float },
-        { "1.en_exp", PrefType.Float },
-        { "1.en", PrefType.Float },
         // Progression
         { "unlockmap1", PrefType.Int },
         { "unlockmap2", PrefType.Int },
@@ -64,6 +46,36 @@ public class SaveManager
         { "useKeyboardCo", PrefType.String },
     };
 
+    private static readonly Dictionary<string, PrefType> PerDuckKeys = new Dictionary<string, PrefType>
+    {
+        // Duck data
+        { "duckData{0}_id", PrefType.String },
+        { "duckData{0}_name", PrefType.String },
+        { "duckData{0}_hair", PrefType.Int },
+        { "duckData{0}_eye", PrefType.Int },
+        { "duckData{0}_eyecolor", PrefType.String },
+        { "duckData{0}_texture", PrefType.Int },
+        { "duckData{0}_texturecolor", PrefType.String },
+        { "duckData{0}_hat", PrefType.Int },
+        { "duckData{0}_costume", PrefType.Int },
+        {"duckData{0}_bodycolor", PrefType.String },
+        // Skill XP
+        { "{0}.run_exp", PrefType.Float },
+        { "{0}.climb_exp", PrefType.Float },
+        { "{0}.fly_exp", PrefType.Float },
+        { "{0}.int_exp", PrefType.Float },
+        { "{0}.jump_exp", PrefType.Float },
+        { "{0}.swim_exp", PrefType.Float },
+        { "{0}.en_exp", PrefType.Float },
+        //AP XP
+        {"AP_TrainingXP_{0}_run", PrefType.Float },
+        {"AP_TrainingXP_{0}_swim", PrefType.Float },
+        {"AP_TrainingXP_{0}_fly", PrefType.Float },
+        {"AP_TrainingXP_{0}_climb", PrefType.Float },
+        {"AP_TrainingXP_{0}_jump", PrefType.Float },
+        {"AP_TrainingXP_{0}_energy", PrefType.Float },
+    };
+
     private static string GetSavePath(string seed, string slotName)
     {
         string fileName = $"{seed}_{slotName}.json";
@@ -80,7 +92,7 @@ public class SaveManager
         Dictionary<string, string> prefs = new Dictionary<string, string>();
 
         foreach (var kvp in KnownKeys)
-        {
+        { 
             if (!PlayerPrefs.HasKey(kvp.Key)) continue;
 
             string value = kvp.Value switch
@@ -92,6 +104,23 @@ public class SaveManager
             
             prefs[kvp.Key] = value;
         }
+        int[] indexes = [1];
+        foreach (int index in indexes)
+        {
+            foreach (var key in PerDuckKeys)
+            {
+                string realKey = string.Format(key.Key,index);
+                if (!PlayerPrefs.HasKey(realKey)) continue;
+                string value = key.Value switch
+                {
+                    PrefType.Int => PlayerPrefs.GetInt(realKey).ToString(),
+                    PrefType.Float => PlayerPrefs.GetFloat(realKey).ToString(),
+                    _ => PlayerPrefs.GetString(realKey)
+                };
+                
+                prefs[realKey] = value;
+            }
+        }
         
         string json = JsonConvert.SerializeObject(new { playerPrefs = prefs }, Formatting.Indented);
         Directory.CreateDirectory(SaveDirectory);
@@ -99,8 +128,27 @@ public class SaveManager
         Plugin.BepinLogger.LogInfo($"SaveManager: saved to {filePath}");
     }
 
+    private static void ClearManagedKeys()
+    {
+        int[] indexes = [1];
+        foreach (int index in indexes)
+        {
+            foreach (var key in PerDuckKeys.Keys)
+            {
+                string realKey = string.Format(key,index);
+                PlayerPrefs.DeleteKey(realKey);
+            }
+        }
+        foreach (var key in KnownKeys.Keys)
+        {
+            PlayerPrefs.DeleteKey(key);
+        }
+        PlayerPrefs.Save();
+    }
+
     public static void LoadFromFile(string filePath)
     {
+        ClearManagedKeys();
         if (!File.Exists(filePath))
         {
             Plugin.BepinLogger.LogInfo($"SaveManager: No save file found at {filePath}, starting fresh.");
@@ -115,11 +163,22 @@ public class SaveManager
             Plugin.BepinLogger.LogWarning($"SaveManager: Failed to deserialize {filePath}");
             return;
         }
+        
+        Dictionary<string, PrefType> fullKeys = new Dictionary<string, PrefType>(KnownKeys);
+        int[] indexes = [1];
+        foreach (int index in indexes)
+        {
+            foreach (var key in PerDuckKeys)
+            {
+                string realKey = string.Format(key.Key,index);
+                fullKeys.Add(realKey, key.Value);
+            }
+        }
 
         foreach (KeyValuePair<string, string> kvp in wrapper.playerPrefs)
         {
             Plugin.BepinLogger.LogInfo($"Loading: {kvp.Key}: {kvp.Value}");
-            if (!KnownKeys.TryGetValue(kvp.Key, out PrefType type)) continue;
+            if (!fullKeys.TryGetValue(kvp.Key, out PrefType type)) continue;
 
             switch (type)
             {
