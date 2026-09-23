@@ -102,6 +102,8 @@ public class ArchipelagoClient
             ServerData.SetupSession(success.SlotData, session.RoomState.Seed);
             Plugin.SkillManager = new SkillManager(ServerData.SkillSize);
             SaveManager.LoadSlot(ServerData.Seed, ServerData.SlotName);
+            PlayerPrefs.SetString("filename", SaveManager.GetSaveName(ServerData.Seed, ServerData.SlotName));
+            PlayerPrefs.Save();
             DuckCreator.loadData();  // Make sure duck data is loaded
             if (DuckCreator.duckGroupData.Count > 0)
             {
@@ -231,6 +233,7 @@ public class ArchipelagoClient
         {
             // Add 10 coins to pocket
             CoinSystem.coinInPocket += 10;
+            CoinSystem.deposit2();
             Plugin.BepinLogger.LogInfo($"Received 10 coins! Total in pocket: {CoinSystem.coinInPocket}");
         }
         // Handle area access items

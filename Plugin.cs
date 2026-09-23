@@ -46,10 +46,28 @@ public class Plugin : BaseUnityPlugin
         ConnectionCache.Load();
 
         ArchipelagoConsole.LogMessage($"{ModDisplayInfo} loaded!");
+        //see if we have an ap save loaded as vanilla
+        if (PlayerPrefs.HasKey("filename"))
+        {
+            if (PlayerPrefs.GetString("filename") != "vanilla.json")
+            {
+                //is ap save, we need to restore.
+                SaveManager.SaveByName(PlayerPrefs.GetString("filename"));
+                SaveManager.LoadVanilla();
+            }
+        }
+        else
+        {
+            //no filename field. assume vanilla save
+            PlayerPrefs.SetString("filename", "vanilla.json");
+            PlayerPrefs.Save();
+        }
         //snapshot vanilla save if one does not exist
         if (!File.Exists(Path.Combine(Path.GetDirectoryName(typeof(Plugin).Assembly.Location), "Saves",
                 "vanilla.json")))
         {
+            PlayerPrefs.SetString("filename", "vanilla.json");
+            PlayerPrefs.Save();
             SaveManager.SaveVanilla();
             BepinLogger.LogInfo("Vanilla save snapshot created.");
         }
@@ -71,6 +89,8 @@ public class Plugin : BaseUnityPlugin
             }
             else
             {
+                PlayerPrefs.SetString("filename", "vanilla.json");
+                PlayerPrefs.Save();
                 SaveManager.SaveVanilla();
             }
             ArchipelagoClient.Disconnect();
@@ -91,6 +111,8 @@ public class Plugin : BaseUnityPlugin
             }
             else
             {
+                PlayerPrefs.SetString("filename", "vanilla.json");
+                PlayerPrefs.Save();
                 SaveManager.SaveVanilla();
             }
             BepinLogger.LogInfo("Game closing, disconnecting from Archipelago...");
@@ -113,6 +135,8 @@ public class Plugin : BaseUnityPlugin
             }
             else
             {
+                PlayerPrefs.SetString("filename", "vanilla.json");
+                PlayerPrefs.Save();
                 SaveManager.SaveVanilla();
             }
             BepinLogger.LogInfo("Application quitting, disconnecting from Archipelago...");

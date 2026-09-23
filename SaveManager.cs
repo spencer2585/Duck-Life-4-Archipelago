@@ -44,6 +44,8 @@ public class SaveManager
         { "setting_sound_e", PrefType.String },
         { "setting_sound", PrefType.String },
         { "useKeyboardCo", PrefType.String },
+        //AP Specific additions
+        {"filename", PrefType.String },
     };
 
     private static readonly Dictionary<string, PrefType> PerDuckKeys = new Dictionary<string, PrefType>
@@ -76,15 +78,25 @@ public class SaveManager
         {"AP_TrainingXP_{0}_energy", PrefType.Float },
     };
 
+    public static string GetSaveName(string seed, string slotName)
+    {
+        return $"{seed}_{slotName}.json";
+    }
+
     private static string GetSavePath(string seed, string slotName)
     {
-        string fileName = $"{seed}_{slotName}.json";
+        string fileName = GetSaveName(seed, slotName);
         return Path.Combine(SaveDirectory, fileName);
     }
 
     private static string GetVanillaSavePath()
     {
         return Path.Combine(SaveDirectory, "vanilla.json");
+    }
+
+    public static void SaveByName(string name)
+    {
+        SaveToFile(Path.Combine(SaveDirectory, name));
     }
 
     private static void SaveToFile(string filePath)
