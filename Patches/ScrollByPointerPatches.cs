@@ -1,6 +1,9 @@
 ﻿using DuckLife4Archipelago.Archipelago;
 using HarmonyLib;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Wix;
 
 namespace DuckLife4Archipelago.Patches
 {
@@ -14,45 +17,37 @@ namespace DuckLife4Archipelago.Patches
             if (!ArchipelagoClient.Authenticated)
                 return true; // Not connected, run original
 
-            if (__instance.gameObject.transform.name == "Box")
-            {
-                Plugin.BepinLogger.LogInfo("=== Box clicked (AP override) ===");
-                return false;
-            }
+            //if (__instance.gameObject.transform.name == "Box")
+            //{
+            //    Plugin.BepinLogger.LogInfo("=== Box clicked (AP override) ===");
+            //    return false;
+            //}
 
             return true; // Run original for everything else
         }
 
-        [HarmonyPatch("OnMouseDown")]
-        [HarmonyPrefix]
-        public static void OnMouseDown_Prefix()
+        [HarmonyPatch("OnMouseUp")]
+        [HarmonyPostfix]
+        public static void OnMouseUp_Postfix(ScrollByPointer __instance)
         {
-            // When clicking anywhere, hide blocking popups
-            
-            // Hide "No Ticket" popup if showing
-            GameObject noTicket = GameObject.Find("No Ticket");
-            if (noTicket != null)
+            if (__instance.gameObject.transform.name == "tournament")
             {
-                var rectTransform = noTicket.GetComponent<RectTransform>();
-                if (rectTransform != null && rectTransform.anchoredPosition == Vector2.zero)
+                bool hasKey = PlayerPrefs.HasKey("ticket" + SceneManager.GetActiveScene().name[4].ToString());
+                if (!hasKey)
                 {
-                    // Move it off screen
-                    rectTransform.anchoredPosition = new Vector2(0f, 10000f);
-                    Plugin.BepinLogger.LogInfo("Hidden No Ticket popup");
-                }
-            }
-            
-            // Hide keybg popup if showing
-            GameObject keybg = GameObject.Find("keybg");
-            if (keybg != null)
-            {
-                var rectTransform = keybg.GetComponent<RectTransform>();
-                if (rectTransform != null && rectTransform.anchoredPosition == Vector2.zero)
-                {
-                    rectTransform.anchoredPosition = new Vector2(0f, 10000f);
-                    Plugin.BepinLogger.LogInfo("Hidden keybg popup");
+                    GameObject noTicket = GameObject.Find("No Ticket");
+                    GameObject messages = GameObject.Find("Messages");
+                    if (noTicket != null && messages != null)
+                    {
+                        noTicket.GetComponent<RectTransform>().anchoredPosition =
+                            new Vector2(-messages.transform.localPosition.x, -messages.transform.localPosition.y);
+                        Text ticketText = noTicket.transform.Find("Text").GetComponent<Text>();
+                        ticketText.text =
+                            "TO ENTER THE TOURNAMENT YOU MUST HAVE AN INVITE. YOU CAN RECEIVE ONE AS AN ITEM FROM A GAME IN THE MULTIWORLD";
+                    }
                 }
             }
         }
     }
+    
 }

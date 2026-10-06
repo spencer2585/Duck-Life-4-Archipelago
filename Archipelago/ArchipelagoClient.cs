@@ -304,6 +304,7 @@ public class ArchipelagoClient
         {
             session.SetGoalAchieved();
         }
+        PlayerPrefs.Save();
     }
 
     private static string GetTournamentTicketKey(string area)

@@ -1,6 +1,11 @@
 ﻿# 1.1.0
-- Save System (Done)
-- Compressed Websockets Fix (Differed)
-- No Tournament Ticket Messages
-- Check Tracker
-- Show Enemy Duck Stats
+- [x] Save System (Done)
+- [ ] ~~Compressed Websockets Fix~~ (Differed)
+- [x] No Tournament Ticket Messages
+  - [X] Fix Positioning
+  - [X] Change Text
+- [ ] Fix Coin Error
+- [ ] Check Tracker
+- [ ] Show Enemy Duck Stats
+- [ ] Fix Gold color deserialization error
+- [ ] Fix Crash on Quit

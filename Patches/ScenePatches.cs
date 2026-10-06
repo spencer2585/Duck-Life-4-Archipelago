@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace DuckLife4Archipelago.Patches
 {
+    
     [HarmonyPatch(typeof(Transition))]
     public class ScenePatches
     {
